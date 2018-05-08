@@ -90,9 +90,9 @@ $(document).ready(function() {
     });
 
     //..FontAwsome include html and link functions
-    $('#includedFontAwsome').load("./fawsome.html",function(){
+    //$('#includedFontAwsome').load("./fawsome.html",function(){
       var loadfa = load_fontawsome();
-    });
+    //});
 
     //..load image locally
     $("#imgInput").change(function(){

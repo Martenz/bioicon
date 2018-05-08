@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+import { Router, Route, IndexRoute } from 'react-router';
+//import App from './components/App';
+
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -114,6 +117,12 @@ function calculateWinner(squares) {
 // ========================================
 
 ReactDOM.render(
-  <Game />,
+    <Game><Router>
+    <Route path="/" component={root}>
+        // define routes list here...
+          
+    </Route>
+  </Router>
+  </Game>,
   document.getElementById('root')
 );
